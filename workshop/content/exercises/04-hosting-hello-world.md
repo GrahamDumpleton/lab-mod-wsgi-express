@@ -71,6 +71,34 @@ You should see the output:
 Hello World!
 ```
 
+To view what processes are running, in the second terminal run:
+
+```execute-2
+ps f
+```
+
+This should yield output similar to:
+
+```
+  PID TTY      STAT   TIME COMMAND
+  100 pts/0    Ss     0:00 /bin/bash -il
+  200 pts/0    S+     0:00  \_ httpd (mod_wsgi-express)   -f /tmp/mod_wsgi-localhost:8000:1001/httpd.conf -D
+  201 pts/0    Sl+    0:00      \_ (wsgi:localhost:8000:1001) -f /tmp/mod_wsgi-localhost:8000:1001/httpd.con
+  202 pts/0    Sl+    0:00      \_ httpd (mod_wsgi-express)   -f /tmp/mod_wsgi-localhost:8000:1001/httpd.con
+  101 pts/1    Ss     0:00 /bin/bash -il
+  300 pts/1    R+     0:00  \_ ps f
+```
+
+Right now the deployment of Apache/mod_wsgi consists of three processes.
+
+The first process is the Apache parent process. It's main job is to manage the child processes and ensure they are restarted if they stop.
+
+The second process is the mod_wsgi daemon process. This is the one labelled ``(wsgi:localhost:8000:1001)``. It is in this process that the WSGI application runs.
+
+The third process is the Apache child worker process. It is what accepts any inbound HTTP requests. In the case of the HTTP request needing to being handled by the WSGI application, this request will then be proxied to the WSGI application running in the mod_wsgi daemon process.
+
+The number of Apache child worker processes and mod_wsgi daemon process can differ based on the options given to ``mod_wsgi-express``, with the number Apache child worker process scaling up as necessary when the server is under load.
+
 Shutdown the server by entering ``ctrl-c``.
 
 ```execute-1
