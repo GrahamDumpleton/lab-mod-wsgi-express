@@ -10,6 +10,8 @@ modules:
         name: Running "pip install"
     exercises/04-hosting-hello-world:
         name: Hosting Hello World
+    exercises/05-apache-configuration:
+        name: Apache Configuration
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

@@ -95,7 +95,7 @@ The first process is the Apache parent process. It's main job is to manage the c
 
 The second process is the mod_wsgi daemon process. This is the one labelled ``(wsgi:localhost:8000:1001)``. It is in this process that the WSGI application runs.
 
-The third process is the Apache child worker process. It is what accepts any inbound HTTP requests. In the case of the HTTP request needing to being handled by the WSGI application, this request will then be proxied to the WSGI application running in the mod_wsgi daemon process.
+The third process is the Apache child worker process. It is what accepts any inbound HTTP requests. In the case of the HTTP request needing to being handled by the WSGI application, this request will then be proxied to the WSGI application running in the mod_wsgi daemon process. The Apache child worker processes is also where HTTP requests for static resources are handled.
 
 The number of Apache child worker processes and mod_wsgi daemon process can differ based on the options given to the ``mod_wsgi-express start-server`` command, with the number of Apache child worker processes also scaling up as necessary when the server is under load.
 
