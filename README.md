@@ -1,4 +1,4 @@
-LAB - Markdown Sample
-=====================
+LAB - Introduction to mod_wsgi-express
+======================================
 
-Sample workshop content using Markdown formatting for pages.
+Interactive workshop on deploying and using mod_wsgi-express.
