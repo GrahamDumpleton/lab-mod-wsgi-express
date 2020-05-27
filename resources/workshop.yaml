@@ -12,3 +12,7 @@ spec:
     files: github.com/GrahamDumpleton/lab-mod-wsgi-express
   session:
     budget: small
+    applications:
+      terminal:
+        enabled: true
+        layout: split
