@@ -14,7 +14,7 @@ By compiling from source code yourself, you could specify an alternate Python ve
 
 Very important when building from source code was to first uninstall any system package for mod_wsgi first, otherwise they would conflict. In uninstalling the system package for mod_wsgi, it did mean though having to configure Apache from scratch to know about mod_wsgi.
 
-Either way, you still had to then manually configure Apache to know about the Python WSGI application you wanted to host. It was this step which tripped many people up when they were new to Apache. More often than not the resulting configuration was sub optimal and wouldn't work well for hosting a Python application as Apache is usually setup to work best for PHP applications, which have totally different run time requirements.
+Either way, you still had to then manually configure Apache to know about the Python WSGI application you wanted to host. It was this step which tripped many people up when they were new to Apache. More often than not the resulting configuration was sub optimal and wouldn't work well for hosting a Python application as Apache is usually setup to work best for PHP applications, which have totally different runtime requirements.
 
 This is where ``mod_wsgi-express`` came in. At least for the case of where you were only interested in hosting a Python WSGI application, and didn't at the same time need to host other web applications with Apache such as a PHP application, it would generate all the Apache configuration for you. This Apache configuration was setup out of the box to provide a good starting experience for a Python WSGI application, whereas the default Apache configuration doesn't.
 
