@@ -1,6 +1,6 @@
 Before we attempt to install mod_wsgi using ``pip``, lets first create a Python virtual environment in which to install mod_wsgi and any other packages we require.
 
-No matter how you are working with Python, it is always a recommended best practice to use a Python virtual environment. Installing extra Python packages direct into the main Python installation, or even into a per user ``site-packages`` directory using ``pip install --user``, can cause various [problems](http://blog.dscpl.com.au/2016/01/python-virtual-environments-and-docker.html). This applies even if using a ``Dockerfile`` to create a container image.
+No matter how you are working with Python, it is always a recommended best practice to use a Python virtual environment. Installing extra Python packages direct into a system Python installation, or even into a per user ``site-packages`` directory using ``pip install --user``, can cause various [problems](http://blog.dscpl.com.au/2016/01/python-virtual-environments-and-docker.html). This applies even if using a ``Dockerfile`` to create a container image.
 
 To create the Python virtual environment, run:
 
