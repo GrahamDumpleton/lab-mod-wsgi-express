@@ -6,6 +6,8 @@ modules:
         name: Installing mod_wsgi
     exercises/02-installation-using-pip:
         name: Installation using pip
+    exercises/03-running-pip-install:
+        name: Running pip install
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

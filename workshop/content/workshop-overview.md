@@ -1,4 +1,4 @@
-The Apache/mod_wsgi project is now over 13 years old. Long gone are the days when it was viewed as being the new cool thing to use. These days people seeking a hosting mechanism for Python WSGI applications tend to gravitate to other solutions.
+The Apache/mod_wsgi project is now over 13 years old. Long gone are the days when it was viewed as being the new cool thing to use. These days people seeking a hosting mechanism for Python WSGI applications tend to gravitate to other solutions, although they aren't much younger in years.
 
 That mod_wsgi is associated with the Apache project doesn't particularly help as Apache is seen as being old and stale. Truth is that the Apache httpd server has never stopped being improved on and is quite a lot better now than it was around the time when mod_wsgi was started.
 
