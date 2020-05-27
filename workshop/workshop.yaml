@@ -4,4 +4,5 @@ modules:
     activate:
     - workshop-overview
     - exercises/01-installing-mod-wsgi
+    - exercises/02-installation-using-pip
     - workshop-summary

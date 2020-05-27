@@ -8,7 +8,7 @@ Another issue with the system provided mod_wsgi package was that it was often ma
 
 The alternative to using the mod_wsgi package provided by the operating system was to compile mod_wsgi from its original source code yourself.
 
-This entailed downloading the source package for mod_wsgi, unpacking it, running ``configure``, then ``make`` and ``make install``.
+This entailed downloading the source package for mod_wsgi, unpacking it, running a ``configure`` script, then running ``make`` and ``make install``.
 
 By compiling from source code yourself, you could specify an alternate Python version be used, and even a different Apache installation if necessary.
 
