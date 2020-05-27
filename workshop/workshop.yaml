@@ -3,5 +3,5 @@ name: Introduction to mod_wsgi-express
 modules:
     activate:
     - workshop-overview
-    - exercises/01-sample-content
+    - exercises/01-installing-mod-wsgi
     - workshop-summary
