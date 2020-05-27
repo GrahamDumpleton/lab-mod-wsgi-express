@@ -6,4 +6,5 @@ modules:
     - exercises/01-installing-mod-wsgi
     - exercises/02-installation-using-pip
     - exercises/03-running-pip-install
+    - exercises/04-hosting-hello-world
     - workshop-summary
