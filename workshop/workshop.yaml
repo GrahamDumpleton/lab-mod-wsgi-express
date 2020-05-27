@@ -8,4 +8,6 @@ modules:
     - exercises/03-running-pip-install
     - exercises/04-hosting-hello-world
     - exercises/05-apache-configuration
+    - exercises/06-wsgi-application
+    - exercises/07-apache-server-logs
     - workshop-summary

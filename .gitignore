@@ -12,3 +12,4 @@
 .yarn
 *.swp
 venv
+__pycache__

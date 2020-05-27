@@ -12,6 +12,10 @@ modules:
         name: Hosting Hello World
     exercises/05-apache-configuration:
         name: Apache Configuration
+    exercises/06-wsgi-application:
+        name: WSGI Application
+    exercises/07-apache-server-logs:
+        name: Apache Server Logs
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

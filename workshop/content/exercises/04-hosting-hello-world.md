@@ -99,7 +99,7 @@ The third process is the Apache child worker process. It is what accepts any inb
 
 The number of Apache child worker processes and mod_wsgi daemon process can differ based on the options given to the ``mod_wsgi-express start-server`` command, with the number of Apache child worker processes also scaling up as necessary when the server is under load.
 
-Shutdown the server by entering ``ctrl-c``.
+Shutdown the server by entering ``ctrl-c`` into the first terminal.
 
 ```execute-1
 <ctrl-c>
