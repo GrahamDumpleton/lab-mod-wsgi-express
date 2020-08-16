@@ -8,7 +8,7 @@ command: cd ~/exercises/hello-world
 
 To see what is contained in this directory run:
 
-```terminal: execute
+```terminal:execute
 command: tree `pwd`
 ```
 
@@ -16,7 +16,7 @@ You will see that all the directory contains is a ``wsgi.py`` file.
 
 To view the contents of the ``wsgi.py`` file run:
 
-```terminal: execute
+```terminal:execute
 command: cat wsgi.py
 ```
 
@@ -74,7 +74,7 @@ Hello World!
 
 To view what processes are running, in the second terminal run:
 
-```terminal: execute
+```terminal:execute
 command: ps f
 session: 2
 ```
@@ -97,11 +97,11 @@ The first process is the Apache parent process. It's main job is to manage the c
 
 The second process is the mod_wsgi daemon process. This is the one labelled ``(wsgi:localhost:8000:1001)``. It is in this process that the WSGI application runs.
 
-The third process is the Apache child worker process. It is what accepts any inbound HTTP requests. In the case of the HTTP request needing to being handled by the WSGI application, this request will then be proxied to the WSGI application running in the mod_wsgi daemon process.
+The third process is the Apache child worker process. It is what accepts any inbound HTTP requests. In the case of the HTTP request needing to be handled by the WSGI application, this request will be proxied to the WSGI application running in the mod_wsgi daemon process. The Apache child worker processes is also where HTTP requests for static resources are handled.
 
-The number of Apache child worker processes and mod_wsgi daemon process can differ based on the options given to ``mod_wsgi-express``, with the number of Apache child worker processes scaling up as necessary when the server is under load.
+The number of Apache child worker processes and mod_wsgi daemon process can differ based on the options given to the ``mod_wsgi-express start-server`` command, with the number of Apache child worker processes also scaling up as necessary when the server is under load.
 
-Shutdown the server by entering ``ctrl-c``.
+Shutdown the server by entering ``ctrl-c`` into the first terminal.
 
 ```terminal:interrupt
 ```
