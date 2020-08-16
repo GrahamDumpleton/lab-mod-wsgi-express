@@ -4,34 +4,35 @@ No matter how you are working with Python, it is always a recommended best pract
 
 To create the Python virtual environment, run:
 
-```execute
-python3 -m venv $HOME/venv
+```terminal:execute
+command: python3 -m venv $HOME/venv
 ```
 
 To use this Python virtual environment, you then need to activate it. Do this for the top terminal window by running:
 
-```execute-1
-source $HOME/venv/bin/activate
+```terminal:execute
+command: source $HOME/venv/bin/activate
 ```
 
 and again for the bottom terminal window by running:
 
-```execute-2
-source $HOME/venv/bin/activate
+```terminal:execute
+command: source $HOME/venv/bin/activate
+session: 2
 ```
 
 Before we install mod_wsgi, first update the version of ``pip`` which is installed into the Python virtual environment. The initial version which is installed is quite often out of date, so it is always a good idea to update it to the latest version.
 
 To update ``pip``, run:
 
-```execute
-pip3 install -U pip
+```terminal:execute
+command: pip3 install -U pip
 ```
 
 You can now install mod_wsgi by running:
 
-```execute
-pip3 install mod_wsgi
+```terminal:execute
+command: pip3 install mod_wsgi
 ```
 
 This command will build and install the Apache module for mod_wsgi into the Python virtual environment. It will also install the ``mod_wsgi-express`` program from which the name used to refer to this package derives.

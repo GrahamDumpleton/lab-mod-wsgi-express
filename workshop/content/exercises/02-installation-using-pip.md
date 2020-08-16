@@ -16,8 +16,8 @@ What the names of the runtime and developer packages for Apache are called diffe
 
 In this workshop environment we already have both the Apache runtime and developer packages installed, so if you run:
 
-```execute
-which apxs
+```terminal:execute
+command: which apxs
 ```
 
 you should see:
@@ -28,8 +28,8 @@ you should see:
 
 As mentioned, when installing mod_wsgi using ``pip`` it will execute the ``apxs`` script to query details about the Apache installation. For example, the location of the header files would be determined by running:
 
-```execute
-apxs -q INCLUDEDIR
+```terminal:execute
+command: apxs -q INCLUDEDIR
 ```
 
 When installing mod_wsgi using ``pip``, the ``apxs`` script will not though actually be used to trigger the compilation of the source code for mod_wsgi. Instead, all the required compiler flags will be determined through queries run using ``apxs``, but ``pip`` will actually trigger the compilation of the source code and the creation of the compiled Apache module.
@@ -37,5 +37,3 @@ When installing mod_wsgi using ``pip``, the ``apxs`` script will not though actu
 Using ``pip`` to trigger the compilation works because Apache modules and Python extension modules are both shared objects. The only difference is how the entrypoint for an Apache module and Python extension module are setup.
 
 Note that on macOS, Apple removed the ``apxs`` utility and no longer supplies it with the Xcode developer package. It is therefore not possible to build third party Apache modules on macOS in the traditional way. When using ``pip`` to install mod_wsgi, tricks are used to determine details about where the system Apache is installed to workaround the absence of ``apxs``. It is therefore still possible to install mod_wsgi on macOS using ``pip`` where as the traditional way of building it direct from source code no longer works.
-
-

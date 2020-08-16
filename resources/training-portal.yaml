@@ -3,9 +3,9 @@ kind: TrainingPortal
 metadata:
   name: lab-mod-wsgi-express
 spec:
-  portal:
-    capacity: 1
-    expires: 60m
-    orphaned: 5m
   workshops:
   - name: lab-mod-wsgi-express
+    capacity: 1
+    reserved: 1
+    expires: 60m
+    orphaned: 5m

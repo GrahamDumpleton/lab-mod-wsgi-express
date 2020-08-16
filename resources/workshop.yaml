@@ -9,9 +9,11 @@ spec:
   duration: 60m
   url: https://github.com/eduk8s/lab-mod-wsgi-express
   content:
+    image: registry.test/base-environment:latest
     files: github.com/GrahamDumpleton/lab-mod-wsgi-express
   session:
-    budget: small
+    namespaces:
+      budget: small
     applications:
       terminal:
         enabled: true
