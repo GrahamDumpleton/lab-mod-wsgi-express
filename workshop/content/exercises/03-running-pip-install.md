@@ -8,17 +8,10 @@ To create the Python virtual environment, run:
 command: python3 -m venv $HOME/venv
 ```
 
-To use this Python virtual environment, you then need to activate it. Do this for the top terminal window by running:
+To use this Python virtual environment, you then need to activate it. Do this in both terminals by running:
 
-```terminal:execute
+```terminal:execute-all
 command: source $HOME/venv/bin/activate
-```
-
-and again for the bottom terminal window by running:
-
-```terminal:execute
-command: source $HOME/venv/bin/activate
-session: 2
 ```
 
 Before we install mod_wsgi, first update the version of ``pip`` which is installed into the Python virtual environment. The initial version which is installed is quite often out of date, so it is always a good idea to update it to the latest version.

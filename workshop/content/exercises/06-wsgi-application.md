@@ -21,7 +21,7 @@ command: curl http://localhost:8000
 session: 2
 ```
 
-Shutdown the server by entering ``ctrl-c`` into the first terminal.
+Shutdown the server by entering ``ctrl+c`` into the first terminal.
 
 ```terminal:interrupt
 ```
@@ -45,7 +45,7 @@ command: curl http://localhost:8000
 session: 2
 ```
 
-Shutdown the server by entering ``ctrl-c`` into the first terminal.
+Shutdown the server by entering ``ctrl+c`` into the first terminal.
 
 ```terminal:interrupt
 ```

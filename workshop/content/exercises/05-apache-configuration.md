@@ -4,8 +4,8 @@ This generated configuration will by default usually be placed into a sub direct
 
 To see the contents of the Apache configuration generated when you ran ``mod_wsgi-express start-server``, run:
 
-```execute
-cat /tmp/mod_wsgi-localhost:8000:1001/httpd.conf
+```terminal:execute
+command: cat /tmp/mod_wsgi-localhost:8000:1001/httpd.conf
 ```
 
 The output is long and detailed and you are not expected to understand it, and that is the aim. Rather than you needing to work out how to configure Apache, ``mod_wsgi-express`` will do it for you, applying an opionated configuration which uses all the techniques learned over the years to setup a configuration which gets close to ensuring Apache runs at its best for Python WGSI applications.
