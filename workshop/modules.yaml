@@ -14,7 +14,9 @@ modules:
         name: Apache Configuration
     exercises/06-wsgi-application:
         name: WSGI Application
-    exercises/07-apache-server-logs:
+    exercises/07-apache-server-root:
+        name: Apache Server Root
+    exercises/08-apache-server-logs:
         name: Apache Server Logs
     workshop-summary:
         name: Workshop Summary

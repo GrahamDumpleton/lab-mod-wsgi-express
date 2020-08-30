@@ -6,4 +6,4 @@ Even though the Apache httpd server itself has an even longer history going back
 
 Where mod_wsgi has suffered though is the reputation that Apache is hard to configure. For running mod_wsgi at least, this problem was solved 5 years ago with the release of ``mod_wsgi-express``. This way of deploying Apache/mod_wsgi dramatically simplified the installation and configuration of Apache/mod_wsgi for hosting Python WSGI applications by doing all the hard work of configuring Apache for you.
 
-In this workshop you will learn how to install and use ``mod_wsgi-express``, including how to integrate it with Python web frameworks such as Django.
+In this workshop you will learn how to install and use ``mod_wsgi-express``, as well as learn how to customize the configuration.
