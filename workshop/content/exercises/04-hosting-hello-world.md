@@ -66,16 +66,14 @@ command: ps f
 session: 2
 ```
 
-This should yield output similar to:
+The output from this should include:
 
 ```
   PID TTY      STAT   TIME COMMAND
   100 pts/0    Ss     0:00 /bin/bash -il
-  200 pts/0    S+     0:00  \_ httpd (mod_wsgi-express)   -f /tmp/mod_wsgi-localhost:8000:1001/httpd.conf -D
-  201 pts/0    Sl+    0:00      \_ (wsgi:localhost:8000:1001) -f /tmp/mod_wsgi-localhost:8000:1001/httpd.con
-  202 pts/0    Sl+    0:00      \_ httpd (mod_wsgi-express)   -f /tmp/mod_wsgi-localhost:8000:1001/httpd.con
-  101 pts/1    Ss     0:00 /bin/bash -il
-  300 pts/1    R+     0:00  \_ ps f
+  200 pts/0    S+     0:00  \_ httpd (mod_wsgi-express)   -f /tmp/mod_wsgi-localhost:8000:1001/httpd.conf ...
+  201 pts/0    Sl+    0:00      \_ (wsgi:localhost:8000:1001) -f /tmp/mod_wsgi-localhost:8000:1001/httpd.conf ...
+  202 pts/0    Sl+    0:00      \_ httpd (mod_wsgi-express)   -f /tmp/mod_wsgi-localhost:8000:1001/httpd.conf ...
 ```
 
 Right now the deployment of Apache/mod_wsgi consists of three processes.

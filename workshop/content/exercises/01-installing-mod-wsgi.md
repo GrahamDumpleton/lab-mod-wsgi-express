@@ -12,7 +12,7 @@ This entailed downloading the source package for mod_wsgi, unpacking it, running
 
 By compiling from source code yourself, you could specify an alternate Python version be used, and even a different Apache installation if necessary.
 
-Very important when building from source code was to first uninstall any system package for mod_wsgi first, otherwise they would conflict. In uninstalling the system package for mod_wsgi, it did mean though having to configure Apache from scratch to know about mod_wsgi.
+Very important when building from source code was to uninstall any system package for mod_wsgi first, otherwise they would conflict. In uninstalling the system package for mod_wsgi, it did mean though having to configure Apache from scratch to know about mod_wsgi.
 
 Either way, you still had to then manually configure Apache to know about the Python WSGI application you wanted to host. It was this step which tripped many people up when they were new to Apache. More often than not the resulting configuration was sub optimal and wouldn't work well for hosting a Python application as Apache is usually setup to work best for PHP applications, which have totally different runtime requirements.
 
